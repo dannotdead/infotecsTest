@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+table td {
+    border: 1px solid black;
+    padding-left: 5px;
+}
+
+table thead td div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px 0 0;
+}
+
+.thead-button-sort, .thead-button-hide {
+    width: 75px;
+    margin: 5px 0 5px 0;
+}
+
+#about {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.flex-container {
+    display: flex;
+    margin: 10px 0 10px 10px;
+}
+
+.flex-left {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.flex-right {
+    width: 30%
+}
+
+.flex-right-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-height: 50vh;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+.submit-form-button {
+    padding: 5px 0 5px 0;
+    margin-top: 10px;
+}
+
+.close-form-button {
+    padding: 5px 5px 5px 5px;
+}
+
+.flex-right {
+    visibility: hidden;
+}
+
+.pagination {
+    margin-left: 10px;
+}
+
+.pagination button {
+    padding: 5px;
+    margin-right: 5px;
+}

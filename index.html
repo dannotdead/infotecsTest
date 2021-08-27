@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>infotecsTest</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-left">
+            <table id="mainTable">
+                <thead>
+                <tr>
+                    <td>
+                        <div>
+                            <p>Имя (firstName)</p>
+                            <button class="thead-button-sort" id="sort_firstName">sort</button>
+                            <button class="thead-button-hide" id="hide_firstName">hide/show</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <p>Фамилия (lastName)</p>
+                            <button class="thead-button-sort" id="sort_lastName">sort</button>
+                            <button class="thead-button-hide" id="hide_lastName">hide/show</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <p>Описание (About)</p>
+                            <button class="thead-button-sort" id="sort_about">sort</button>
+                            <button class="thead-button-hide" id="hide_about">hide/show</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <p>Цвет глаз (eyeColor)</p>
+                            <button class="thead-button-sort" id="sort_eyeColor">sort</button>
+                            <button class="thead-button-hide" id="hide_eyeColor">hide/show</button>
+                        </div>
+                    </td>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div id="change" class="flex-right">
+            <div class="flex-right-head">
+                <p>Форма редактирования</p>
+                <button class="close-form-button" id="close_form">Закрыть</button>
+            </div>
+            <form>
+                <label for="input_id">ID</label>
+                    <input id="input_id" type="text" value="" disabled/>
+                <label for="input_firstName">Изменить имя</label>
+                    <input id="input_firstName" type="text" value=""/>
+                <br>
+                <label for="input_lastName">Изменить фамилию</label>
+                    <input id="input_lastName" type="text" value=""/>
+                <br>
+                <label for="input_about">Изменить about</label>
+                <textarea id="input_about" type="text" value=""></textarea>
+                <br>
+                <label for="input_eyeColor">Изменить eyeColor</label>
+                    <input id="input_eyeColor" type="text" value=""/>
+                <button class="submit-form-button" type="submit">Применить</button>
+            </form>
+        </div>
+    </div>
+    <div class="pagination" id="pagination"></div>
+    <script type="module" src="scripts/storage.js"></script>
+    <script type="module" src="scripts/index.js"></script>
+    <script type="module" src="scripts/editForm.js"></script>
+    <script type="module" src="scripts/sorting.js"></script>
+    <script type="module" src="scripts/showHide.js"></script>
+</body>
+</html>
